@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "032a1f60-2a1c-4678-8e30-f274367f60b3",
+		"name": "API Perpustakaan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33188749"
+	},
+	"item": [
+		{
+			"name": "GET BUKU",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/buku/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"buku",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET BUKU BY ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/buku/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"buku",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST BUKU",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"judul\" : \"Tes\",\r\n    \"penulis\" : \"Gilang Raka Ramadhan\",\r\n    \"tahun\" : 2024,\r\n    \"id_status\" : 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/buku/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"buku",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE BUKU",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"judul\" : \"Tes\",\r\n    \"penulis\" : \"Gilang Raka Ramadhan\",\r\n    \"tahun\" : 2024,\r\n    \"id_status\" : 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/buku/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"buku",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE BUKU",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"judul\" : \"Tes\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/buku/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"buku",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
